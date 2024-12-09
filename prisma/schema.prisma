@@ -30,10 +30,10 @@ model User {
 }
 
 model Detail {
-    id          Int      @id @default(autoincrement())
-    class_name  String
-    description String   @db.Text
-    tips        String   @db.Text
-    createdAt   DateTime @default(now())
-    updatedAt   DateTime @updatedAt
+  id          Int      @id @default(autoincrement())
+  class_name  String
+  description String   @db.Text
+  tips        String   @db.Text
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
