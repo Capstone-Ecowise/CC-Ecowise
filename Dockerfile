@@ -9,7 +9,10 @@ COPY . .
 
 RUN npm install
 
-# Jalankan seeding
+COPY ./capstone-ecowise-a475c60120e8.json /app/capstone-ecowise-a475c60120e8.json
+
+ENV GOOGLE_APPLICATION_CREDENTIALS="/app/capstone-ecowise-a475c60120e8.json"
+
 RUN npm run seed
 
 EXPOSE 8080

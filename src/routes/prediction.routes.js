@@ -5,7 +5,7 @@ const upload = require("../helpers/upload");
 const authOptional = require("../middleware/authOptional");
 
 router.post(
-  "/prediction",
+  "/model",
   upload.single("image"),
   authOptional,
   PredictionController.predict
